@@ -9,3 +9,14 @@ C:\CIDM3312\FinalProject\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite
 C:\CIDM3312\FinalProject\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.AssemblyInfo.cs
 C:\CIDM3312\FinalProject\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.dll
 C:\CIDM3312\FinalProject\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.pdb
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.deps.json
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.runtimeconfig.json
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.runtimeconfig.dev.json
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.dll
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.pdb
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.csprojResolveAssemblyReference.cache
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.csproj.CoreCompileInputs.cache
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.AssemblyInfoInputs.cache
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.AssemblyInfo.cs
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.dll
+C:\CIDM3312\Final_Project_CIDM3312\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.pdb

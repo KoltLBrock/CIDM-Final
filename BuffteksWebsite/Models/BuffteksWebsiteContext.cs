@@ -9,8 +9,8 @@ namespace BuffteksWebsite.Models
         {
         }
 
-        public DbSet<BuffteksWebsite.Models.Member> Member { get; set; }
-        public DbSet<BuffteksWebsite.Models.Member> Client { get; set; }
-        public DbSet<BuffteksWebsite.Models.Member> Project { get; set; }
+        public DbSet<BuffteksWebsite.Models.Member> Members { get; set; }
+        public DbSet<BuffteksWebsite.Models.Client> Clients { get; set; }
+        public DbSet<BuffteksWebsite.Models.Project> Projects { get; set; }
     }
 }

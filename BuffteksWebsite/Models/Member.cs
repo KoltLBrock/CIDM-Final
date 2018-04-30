@@ -4,7 +4,8 @@ namespace BuffteksWebsite.Models
 {
     public class Member
     {
-        public int MemberID { get; set; }
+        public int ID {get; set;}
+        public string MemberUserName { get; set; }
         public string FirstName { get; set;}
         public string LastName {get; set;}
         public string Standing {get; set;}

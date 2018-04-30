@@ -4,7 +4,8 @@ namespace BuffteksWebsite.Models
 {
     public class Client
     {
-        public string ClientID { get; set; }
+        public int ID {get; set;}
+        public string ClientUserName { get; set; }
         public string FirstName { get; set;}
         public string LastName {get; set;}
         public string Email{ get; set; }
