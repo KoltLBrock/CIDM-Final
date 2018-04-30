@@ -38,6 +38,94 @@ namespace BuffteksWebsite.Models
                          Birthday = "January 1, 1220",
                          Email = "test1@tets.com",
                          Phone = "555-555-5556"
+                     },
+                    new Member
+                     {
+                         MemberUserName = "JustinN",
+                         FirstName = "Justin",
+                         LastName = "Nelson",
+                         Standing = "Junior",
+                         Major = "CIS",
+                         Birthday = "January 1, 1220",
+                         Email = "test1@tets.com",
+                         Phone = "555-555-5556"
+                     },
+                    new Member
+                     {
+                         MemberUserName = "RoseE",
+                         FirstName = "Rose",
+                         LastName = "Evans",
+                         Standing = "Junior",
+                         Major = "CIS",
+                         Birthday = "January 1, 1220",
+                         Email = "test1@tets.com",
+                         Phone = "555-555-5556"
+                     },
+                    new Member
+                     {
+                         MemberUserName = "LouisG",
+                         FirstName = "Louis",
+                         LastName = "Gonzalez",
+                         Standing = "Junior",
+                         Major = "CIS",
+                         Birthday = "January 1, 1220",
+                         Email = "test1@tets.com",
+                         Phone = "555-555-5556"
+                     },
+                    new Member
+                     {
+                         MemberUserName = "DonnaM",
+                         FirstName = "Donna",
+                         LastName = "Murphy",
+                         Standing = "Junior",
+                         Major = "CIS",
+                         Birthday = "January 1, 1220",
+                         Email = "test1@tets.com",
+                         Phone = "555-555-5556"
+                     },
+                    new Member
+                     {
+                         MemberUserName = "IrenevM",
+                         FirstName = "Irenev",
+                         LastName = "Martinez",
+                         Standing = "Junior",
+                         Major = "CIS",
+                         Birthday = "January 1, 1220",
+                         Email = "test1@tets.com",
+                         Phone = "555-555-5556"
+                     },
+                    new Member
+                     {
+                         MemberUserName = "LawrenceP",
+                         FirstName = "Lawrence",
+                         LastName = "Phillips",
+                         Standing = "Junior",
+                         Major = "CIS",
+                         Birthday = "January 1, 1220",
+                         Email = "test1@tets.com",
+                         Phone = "555-555-5556"
+                     },
+                    new Member
+                     {
+                         MemberUserName = "MartinB",
+                         FirstName = "Martin",
+                         LastName = "Bell",
+                         Standing = "Junior",
+                         Major = "CIS",
+                         Birthday = "January 1, 1220",
+                         Email = "test1@tets.com",
+                         Phone = "555-555-5556"
+                     },
+                    new Member
+                     {
+                         MemberUserName = "JaniceR",
+                         FirstName = "Janice",
+                         LastName = "Rodriguez",
+                         Standing = "Junior",
+                         Major = "CIS",
+                         Birthday = "January 1, 1220",
+                         Email = "test1@tets.com",
+                         Phone = "555-555-5556"
                      }
                 );
                 if (context.Clients.Any()){
