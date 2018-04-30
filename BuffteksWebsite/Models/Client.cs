@@ -1,9 +1,10 @@
 using System;
-
+using System.ComponentModel.DataAnnotations;
 namespace BuffteksWebsite.Models
 {
-    public class Client : ProjectParticiant
+    public class Client : ProjectParticipant
     {
+        [Display(Name = "User Name")]
         public string ClientUserName { get; set; }
         public string Email{ get; set; }
         public string Phone{ get; set; }

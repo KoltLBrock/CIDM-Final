@@ -1,9 +1,11 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace BuffteksWebsite.Models
 {
-    public class Member : ProjectParticiant
+    public class Member : ProjectParticipant
     {
+        [Display(Name = "User Name")]
         public string MemberUserName { get; set; }
         public string Standing {get; set;}
         public string Major {get; set;}

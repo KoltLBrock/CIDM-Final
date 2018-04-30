@@ -12,5 +12,6 @@ namespace BuffteksWebsite.Models
         public DbSet<BuffteksWebsite.Models.Member> Members { get; set; }
         public DbSet<BuffteksWebsite.Models.Client> Clients { get; set; }
         public DbSet<BuffteksWebsite.Models.Project> Projects { get; set; }
+        public DbSet<BuffteksWebsite.Models.ProjectRoster> ProjectRoster { get; set; }
     }
 }

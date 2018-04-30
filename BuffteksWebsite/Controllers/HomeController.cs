@@ -12,7 +12,7 @@ namespace BuffteksWebsite.Controllers
     {
         public IActionResult Index()
         {
-            //to do
+            //to do:
             //determine way to assign members and clients ("ProjectParticipant"s) to the project
             //as well as a way to search and filter by those assignments
             //design a good bootstrap 4 layout and views
