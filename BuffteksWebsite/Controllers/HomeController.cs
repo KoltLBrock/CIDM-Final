@@ -17,7 +17,11 @@ namespace BuffteksWebsite.Controllers
             //as well as a way to search and filter by those assignments
             //design a good bootstrap 4 layout and views
 
-
+            // Only 1 client on a project
+            // Student can only be on 1 project
+            // edit particpant drop down should not include people who are already in a project, including the one being modified
+            // no need to be able to edit new clients into projects
+            // only need clients when adding new projects
 
 
             return View();

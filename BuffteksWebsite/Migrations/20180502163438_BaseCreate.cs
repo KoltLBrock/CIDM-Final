@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace BuffteksWebsite.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class BaseCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

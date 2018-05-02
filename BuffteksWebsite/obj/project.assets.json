@@ -13118,23 +13118,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\John\\.nuget\\packages\\": {},
+    "C:\\Users\\kb980476\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CIDM3312\\Final_Project_CIDM3312\\folder\\CIDM-Final\\BuffteksWebsite\\BuffteksWebsite.csproj",
+      "projectUniqueName": "C:\\CIDM3312\\workfolder\\CIDM-Final\\BuffteksWebsite\\BuffteksWebsite.csproj",
       "projectName": "BuffteksWebsite",
-      "projectPath": "C:\\CIDM3312\\Final_Project_CIDM3312\\folder\\CIDM-Final\\BuffteksWebsite\\BuffteksWebsite.csproj",
-      "packagesPath": "C:\\Users\\John\\.nuget\\packages\\",
-      "outputPath": "C:\\CIDM3312\\Final_Project_CIDM3312\\folder\\CIDM-Final\\BuffteksWebsite\\obj\\",
+      "projectPath": "C:\\CIDM3312\\workfolder\\CIDM-Final\\BuffteksWebsite\\BuffteksWebsite.csproj",
+      "packagesPath": "C:\\Users\\kb980476\\.nuget\\packages\\",
+      "outputPath": "C:\\CIDM3312\\workfolder\\CIDM-Final\\BuffteksWebsite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\John\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kb980476\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
