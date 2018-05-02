@@ -135,6 +135,7 @@ namespace BuffteksWebsite.Models
                      new Client
                      {
                          ClientUserName = "BobBobert",
+                         CompanyName = "B Inc.",
                          FirstName = "Bob",
                          LastName = "Bobert",
                          Email = "hi@test.com",
@@ -143,6 +144,7 @@ namespace BuffteksWebsite.Models
                      new Client
                      {
                          ClientUserName = "Georgie",
+                         CompanyName = "A Corp",
                          FirstName = "George",
                          LastName = "David",
                          Email = "hi@test.com",

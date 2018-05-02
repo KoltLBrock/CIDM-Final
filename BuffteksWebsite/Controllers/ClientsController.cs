@@ -25,7 +25,7 @@ namespace BuffteksWebsite.Controllers
         }
 
         // GET: Clients/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -65,7 +65,7 @@ namespace BuffteksWebsite.Controllers
         }
 
         // GET: Clients/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -85,7 +85,7 @@ namespace BuffteksWebsite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,ClientUserName,FirstName,LastName,Email,Phone")] Client client)
+        public async Task<IActionResult> Edit(string id, [Bind("ID,ClientUserName,FirstName,LastName,Email,Phone")] Client client)
         {
             if (id != client.ID)
             {
@@ -116,7 +116,7 @@ namespace BuffteksWebsite.Controllers
         }
 
         // GET: Clients/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -136,15 +136,14 @@ namespace BuffteksWebsite.Controllers
         // POST: Clients/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var client = await _context.Clients.SingleOrDefaultAsync(m => m.ID == id);
             _context.Clients.Remove(client);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-        private bool ClientExists(int id)
+        private bool ClientExists(string id)
         {
             return _context.Clients.Any(e => e.ID == id);
         }

@@ -6,11 +6,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BuffteksWebsite.Models{
     public class ProjectParticipant {
-        public int ID {get; set;}
+        [Key]
+        public string ID {get; set;}
         [Display(Name = "First Name")]
         public string FirstName {get; set;}
         [Display(Name = "Last Name")]
         public string LastName {get; set;}
+        [Display(Name = "Email Address")]
+        public string Email{ get; set; }
+        [Display(Name = "Phone Number")]
+        public string Phone{ get; set; }
         public ICollection<ProjectRoster> Projects {get; set;}
     }
 }

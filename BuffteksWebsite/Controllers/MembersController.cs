@@ -25,7 +25,7 @@ namespace BuffteksWebsite.Controllers
         }
 
         // GET: Members/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -65,7 +65,7 @@ namespace BuffteksWebsite.Controllers
         }
 
         // GET: Members/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -85,7 +85,7 @@ namespace BuffteksWebsite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,MemberUserName,FirstName,LastName,Standing,Major,Birthday,Email,Phone")] Member member)
+        public async Task<IActionResult> Edit(string id, [Bind("ID,MemberUserName,FirstName,LastName,Standing,Major,Birthday,Email,Phone")] Member member)
         {
             if (id != member.ID)
             {
@@ -116,7 +116,7 @@ namespace BuffteksWebsite.Controllers
         }
 
         // GET: Members/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -136,7 +136,7 @@ namespace BuffteksWebsite.Controllers
         // POST: Members/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var member = await _context.Members.SingleOrDefaultAsync(m => m.ID == id);
             _context.Members.Remove(member);
@@ -144,7 +144,7 @@ namespace BuffteksWebsite.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool MemberExists(int id)
+        private bool MemberExists(string id)
         {
             return _context.Members.Any(e => e.ID == id);
         }
