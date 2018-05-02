@@ -21,7 +21,7 @@ namespace BuffteksWebsite.Migrations
 
             modelBuilder.Entity("BuffteksWebsite.Models.Project", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Details");
@@ -30,41 +30,50 @@ namespace BuffteksWebsite.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Projects");
+                    b.ToTable("Project");
                 });
 
-            modelBuilder.Entity("BuffteksWebsite.Models.ProjectParticiant", b =>
+            modelBuilder.Entity("BuffteksWebsite.Models.ProjectParticipant", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Discriminator")
                         .IsRequired();
 
+                    b.Property<string>("Email");
+
                     b.Property<string>("FirstName");
 
                     b.Property<string>("LastName");
 
-                    b.Property<int?>("ProjectID");
+                    b.Property<string>("Phone");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("ProjectID");
+                    b.ToTable("ProjectParticipant");
 
-                    b.ToTable("ProjectParticiant");
+                    b.HasDiscriminator<string>("Discriminator").HasValue("ProjectParticipant");
+                });
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("ProjectParticiant");
+            modelBuilder.Entity("BuffteksWebsite.Models.ProjectRoster", b =>
+                {
+                    b.Property<string>("ProjectID");
+
+                    b.Property<string>("ProjectParticipantID");
+
+                    b.HasKey("ProjectID", "ProjectParticipantID");
+
+                    b.HasIndex("ProjectParticipantID");
+
+                    b.ToTable("ProjectRoster");
                 });
 
             modelBuilder.Entity("BuffteksWebsite.Models.Client", b =>
                 {
-                    b.HasBaseType("BuffteksWebsite.Models.ProjectParticiant");
+                    b.HasBaseType("BuffteksWebsite.Models.ProjectParticipant");
 
-                    b.Property<string>("ClientUserName");
-
-                    b.Property<string>("Email");
-
-                    b.Property<string>("Phone");
+                    b.Property<string>("CompanyName");
 
                     b.ToTable("Client");
 
@@ -73,32 +82,28 @@ namespace BuffteksWebsite.Migrations
 
             modelBuilder.Entity("BuffteksWebsite.Models.Member", b =>
                 {
-                    b.HasBaseType("BuffteksWebsite.Models.ProjectParticiant");
-
-                    b.Property<string>("Birthday");
-
-                    b.Property<string>("Email")
-                        .HasColumnName("Member_Email");
+                    b.HasBaseType("BuffteksWebsite.Models.ProjectParticipant");
 
                     b.Property<string>("Major");
 
-                    b.Property<string>("MemberUserName");
-
-                    b.Property<string>("Phone")
-                        .HasColumnName("Member_Phone");
-
                     b.Property<string>("Standing");
 
-                    b.ToTable("Member");
+                    b.ToTable("Client");
 
                     b.HasDiscriminator().HasValue("Member");
                 });
 
-            modelBuilder.Entity("BuffteksWebsite.Models.ProjectParticiant", b =>
+            modelBuilder.Entity("BuffteksWebsite.Models.ProjectRoster", b =>
                 {
-                    b.HasOne("BuffteksWebsite.Models.Project")
+                    b.HasOne("BuffteksWebsite.Models.Project", "Project")
                         .WithMany("Participants")
-                        .HasForeignKey("ProjectID");
+                        .HasForeignKey("ProjectID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("BuffteksWebsite.Models.ProjectParticipant", "ProjectParticipant")
+                        .WithMany("Projects")
+                        .HasForeignKey("ProjectParticipantID")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

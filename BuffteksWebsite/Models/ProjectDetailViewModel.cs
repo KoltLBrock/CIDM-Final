@@ -8,13 +8,8 @@ namespace BuffteksWebsite.Models
 {
     public class ProjectDetailViewModel
     {
-
         public Project TheProject {get; set;}
-
         public List<Client> ProjectClients { get; set; }
-        
         public List<Member> ProjectMembers { get; set; }
-
-        
     }
 }

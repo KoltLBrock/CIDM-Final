@@ -13,11 +13,8 @@ namespace BuffteksWebsite.Models
         [Display(Name = "Project Description")] 
         public string Details {get; set;}
         public ICollection<ProjectRoster> Participants { get; set; }
-        
-        /*
         public override string ToString(){
-            return $"Project Name: {this.ProjectName}\nProject Description: {this.ProjectDescription}";
+            return $"Project Name: {this.ProjectName}\nProject Description: {this.Details}";
         }
-         */
     }
 }

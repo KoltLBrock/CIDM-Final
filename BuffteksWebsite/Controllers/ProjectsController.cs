@@ -77,7 +77,7 @@ namespace BuffteksWebsite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,ProjectName,ProjectDescription")] Project project)
+        public async Task<IActionResult> Create([Bind("ID,ProjectName,Details")] Project project)
         {
             if (ModelState.IsValid)
             {
@@ -109,7 +109,7 @@ namespace BuffteksWebsite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("ID,ProjectName,ProjectDescription")] Project project)
+        public async Task<IActionResult> Edit(string id, [Bind("ID,ProjectName,Details")] Project project)
         {
             if (id != project.ID)
             {
