@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BuffteksWebsite</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" rel="stylesheet" ></link>
+    <link href="//code.jquery.com/jquery-1.11.1.min.js" rel="stylesheet"></link>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet"></link>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/css/B4.css" />
+</head>
+<!-- This header and navbar is from https://bootsnipp.com/snippets/Q04ZX -->
+
+
+<!-- Navigation -->
+<body>
+<div class="fixed-top">
+  <header class="topbar">
+      <div class="container">
+        <div class="row">
+          <!-- social icon-->
+          <div class="col-sm-12">
+            <ul class="social-network">
+            <!--
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
+            -->
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" ><img src="~/images/buffteks-logo.png" alt="Home"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" asp-controller="Projects" asp-action="Index">Projects</a>
+          </li>
+
+         <li class="nav-item">
+            <a class="nav-link" asp-controller="Members" asp-action="Index">Members</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" asp-controller="Clients" asp-action="Index">Clients</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" asp-controller="Home" asp-action="About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" asp-controller="Home" asp-action="Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>  
+<div class="container body-content">
+        @RenderBody()
+</div>
+
+  <footer>
+      <!-- Footer is from https://bootsnipp.com/snippets/featured/footer-using-bootstrap-4-->
+    <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick link</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a asp-controller="Home" asp-action="Index"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a asp-controller="Home" asp-action="About"><i class="fa fa-angle-double-right"></i>About</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a asp-controller="Projects" asp-action="Index"><i class="fa fa-angle-double-right"></i>Projects</a></li>
+						<li><a asp-controller="Clients" asp-action="Index"><i class="fa fa-angle-double-right"></i>Clients</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a asp-controller="Members" asp-action="Index"><i class="fa fa-angle-double-right"></i>Members</a></li>
+						<li><a asp-controller="Home" asp-action="Contact"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+                        <!--
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                        -->
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>Buffteks is a WTAMU Campus Organization.</p>
+					<p class="h6">&copy All Rights Reserved.</p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -42,3 +42,14 @@ C:\CIDM3312\Final_Project_CIDM3312\folder\CIDM-Final\BuffteksWebsite\obj\Debug\n
 C:\CIDM3312\Final_Project_CIDM3312\folder\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.AssemblyInfo.cs
 C:\CIDM3312\Final_Project_CIDM3312\folder\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.dll
 C:\CIDM3312\Final_Project_CIDM3312\folder\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.pdb
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.deps.json
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.runtimeconfig.json
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.runtimeconfig.dev.json
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.dll
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\bin\Debug\netcoreapp2.0\BuffteksWebsite.pdb
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.csprojResolveAssemblyReference.cache
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.csproj.CoreCompileInputs.cache
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.AssemblyInfoInputs.cache
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.AssemblyInfo.cs
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.dll
+C:\Users\John\Desktop\workfolder\CIDM-Final\BuffteksWebsite\obj\Debug\netcoreapp2.0\BuffteksWebsite.pdb

@@ -191,16 +191,49 @@ namespace BuffteksWebsite.Controllers
             */                
 
             List<SelectListItem> membersSelectList = new List<SelectListItem>();
+            var membersforedit = 
+                from participant in _context.Members
+                join projectparticipant in _context.ProjectRoster
+                on participant.ID equals projectparticipant.ProjectParticipantID
+                where project.ID == projectparticipant.ProjectID
+                select participant;
+            int indx = -1;
 
             foreach(var member in members)
             {
+                indx++;
                 membersSelectList.Add(new SelectListItem { Value=member.ID, Text = member.FirstName + " " + member.LastName});
-            }
+                foreach(var item in membersforedit){
+                    if(membersSelectList.Any(d => d.Value == item.ID)){
+                        membersSelectList.RemoveAt(indx);
+                        indx--;
+                    }
+                }
 
+            }
+            
+            var clientsforedit = 
+                from participant in _context.Clients
+                join projectparticipant in _context.ProjectRoster
+                on participant.ID equals projectparticipant.ProjectParticipantID
+                where project.ID == projectparticipant.ProjectID
+                select participant;
+
+
+            
+            //foreach(var item in membersforedit){
+            //    foreach(var item2 in membersSelectList){
+            //        if(item2.Value == item.ID){
+            //            membersSelectListToSend.Remove(item2);
+            //        }
+            //    }
+            //}
             //create and prepare ViewModel
             EditProjectDetailViewModel epdvm = new EditProjectDetailViewModel
             {
                 TheProject = project,
+                ProjectClients = clientsforedit.ToList() ?? null,
+                //ProjectMembers = membersforedit.ToList() ?? null,
                 ProjectClientsList = clientsSelectList,
                 ProjectMembersList = membersSelectList
             };
@@ -208,7 +241,24 @@ namespace BuffteksWebsite.Controllers
 
             return View(epdvm);
         }        
-
+        [HttpPost]
+        public async Task<IActionResult> EditProjectParticipants(String id, EditProjectDetailViewModel model){
+            var membersFromDb = _context.Members.ToList();
+            Member ans = null;
+            foreach(var items in membersFromDb){
+                if(items.ID == model.SelectedID){
+                    ans = items;
+                }
+            }
+            var projectroster = new ProjectRoster {
+                    ProjectID = model.TheProject.ID.ToString(), 
+                    Project = model.TheProject,
+                    ProjectParticipantID = model.SelectedID.ToString(),
+                    ProjectParticipant = ans};
+            _context.ProjectRoster.Add(projectroster);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
         // GET: Projects/Delete/5
         public async Task<IActionResult> Delete(string id)
         {

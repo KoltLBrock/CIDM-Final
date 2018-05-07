@@ -29,22 +29,22 @@
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </form>
-        *@        
+        *@
+        @if(Model.ProjectClients.Count < 1 ){
         <form asp-controller="Projects" asp-action="EditProjectParticipants" method="post">
             <div class="form-group">
                 <label asp-for="SelectedID" class="control-label">Select from Clients</label>
                 <select asp-for="SelectedID" asp-items="Model.ProjectClientsList"></select> 
-                <span class="text-danger">TODO: We need to show an exclusive list of clients not already on the project</span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Select New Client for Project" class="btn btn-default" />
             </div>
         </form>
+        }
         <form asp-controller="Projects" asp-action="EditProjectParticipants" method="post">
             <div class="form-group">
                 <label asp-for="SelectedID" class="control-label">Select from Members</label>
                 <select asp-for="SelectedID" asp-items="Model.ProjectMembersList"></select> 
-                <span class="text-danger">TODO: We need to show an exclusive list of members not already on the project</span>                
             </div>
             <div class="form-group">
                 <input type="submit" value="Select New Member for Project" class="btn btn-default" />
